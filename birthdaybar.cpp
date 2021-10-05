@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+    int n,a[100],d,m,i,c=0,j,sum,l;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        sum=0;
+        for(j=i;j<n-m;j++){
+            sum=sum+a[j];
+        }
+        if(sum==d)
+        c++;
+    }
+    printf("%d",c);
+}
