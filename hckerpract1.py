@@ -1,0 +1,12 @@
+s=input()
+l1=s.split(' ')
+s=len(l1)
+l4=list()
+l2=list()
+for i in range(s):
+    l2=list(l1[i])
+    l2[0]=l2[0].upper()
+    l2="".join(l2)
+    l4.append(l2)
+l4=" ".join(l4)
+print(l4)
